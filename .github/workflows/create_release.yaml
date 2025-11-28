@@ -1,0 +1,65 @@
+---
+name: Create release
+
+on:
+  push:
+    tags:
+      - v*
+
+permissions:
+  contents: write
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Clone project
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install bun
+        uses: oven-sh/setup-bun@v2
+      - name: Fetch dependencies
+        shell: bash
+        run: |
+          bun i
+      - name: Build Windows x64 release
+        shell: bash
+        run: |
+          bun run build -w
+      - name: Publish Artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: win_artifacts
+          if-no-files-found: error
+          path: |
+            release/DSK Filter-win-x64.exe
+            release/DSK Filter-win-x64.7z
+  release:
+    name: Create Release
+    needs: build-windows
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Fetch artifacts from build steps
+        id: fetch_artifacts
+        uses: actions/download-artifact@v5
+        with:
+          name: win_artifacts
+      - name: Create Release
+        id: create_release
+        uses: comnoco/create-release-action@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: true
+          body_path: CHANGELOG.md
+      - name: Attach artifacts to release
+        uses: shogo82148/actions-upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ steps.fetch_artifacts.outputs.download-path }}/DSK[ ]Filter-win-x64.*

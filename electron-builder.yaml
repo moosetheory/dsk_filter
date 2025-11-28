@@ -1,0 +1,21 @@
+---
+appId: "dev.adhdgirl.dsk-filter"
+asar: true
+productName: "DSK Filter"
+directories:
+  output: "release/"
+files:
+  - "dist"
+  - "dist-electron"
+artifactName: "${productName}-${os}-${arch}.${ext}"
+mac:
+  category: "public.app-category.productivity"
+  target:
+    - target: dmg
+      arch: arm64
+win:
+  target:
+    - target: portable
+      arch: x64
+    - target: 7z
+      arch: x64
