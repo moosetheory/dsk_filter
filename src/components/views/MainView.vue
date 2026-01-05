@@ -121,18 +121,18 @@ const buildExcel = () => {
   <div>
     <div>
       <Button label="Prepare File" @click="buildCsv()" />
-      <Button label="Do Excel Things" @click="buildExcel()" />
+      <Button label="To Excel and Beyond" @click="buildExcel()" />
     </div>
     <div v-if="contaminantStore.isLoaded">
       <DataTable :value="contaminantStore.sources">
         <Column field="name" header="Source"></Column>
-        <Column field="internal" header="Internal">
+        <Column field="internal" header="Onsite">
           <template #body="slotProps">
             <Checkbox :aria-label="getAriaLabel(intStart, slotProps.data.name)" size="large"
               v-model="slotProps.data.internal" binary />
           </template>
         </Column>
-        <Column field="external" header="External">
+        <Column field="external" header="Offsite">
           <template #body="slotProps">
             <Checkbox :aria-label="getAriaLabel(extStart, slotProps.data.name)" size="large"
               v-model="slotProps.data.external" binary />
