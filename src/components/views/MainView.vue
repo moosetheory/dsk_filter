@@ -25,7 +25,10 @@ const getUniqueContaminants = (): string[] =>
   contaminantStore
     .sources
     .flatMap((src: ContaminantSource): string[] =>
-      (src.internal || src.external) ? src.contaminants : []
+      src.internal ? src.internalContaminants : []
+    )
+    .flatMap((src: ContaminantSource): string[] =>
+      src.external ? src.externalContaminants : []
     )
     .filter((value: string, index: number, array: string[]): boolean =>
       array.indexOf(value) === index

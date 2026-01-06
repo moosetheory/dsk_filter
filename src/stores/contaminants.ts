@@ -15,13 +15,13 @@ export const useContaminantStore = defineStore("comtaminants", () => {
     sources: [
       {
         name: "Carbon in natural strata: peat, organic matter in e.g. alluvium, chalk",
-        contaminants: ["c6a97e0a-fd17-4e79-8bd3-1a5f8eb3336f"],
+        internalContaminants: ["c6a97e0a-fd17-4e79-8bd3-1a5f8eb3336f"],
         internal: false,
         external: false,
       },
       {
         name: "Airports",
-        contaminants: [
+        internalContaminants: [
           "21055e1e-2f31-476c-b39e-8f7b445b6369",
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -35,7 +35,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Animal and animal products processing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
           "28b2c37a-2b2b-4b7e-baea-80af664f4f6e",
@@ -48,7 +48,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Asbestos manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
@@ -59,7 +59,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Ceramics, cement and asphalt manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -72,7 +72,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Charcoal works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -86,7 +86,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: coatings (paints and printing inks) manufacture",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -100,7 +100,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: cosmetics and toiletries manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -113,7 +113,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: disinfectants manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
@@ -127,7 +127,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: explosives, propellants and pyrotechnics manufacture",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -140,7 +140,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: fertiliser manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
@@ -151,7 +151,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: fine chemicals manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -166,7 +166,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: inorganic chemicals manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -179,7 +179,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: linoleum, vinyl and bitumen floor coatings manufacture",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -194,7 +194,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: mastics, sealants, adhesives and roofing felt manufacture",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -207,7 +207,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: organic chemicals manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -221,7 +221,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: pesticides manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "28b2c37a-2b2b-4b7e-baea-80af664f4f6e",
@@ -236,7 +236,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: pharmaceuticals manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -249,7 +249,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: rubber processing works",
-        contaminants: [
+        internalContaminants: [
           "28b2c37a-2b2b-4b7e-baea-80af664f4f6e",
           "6399e9b2-dae8-4574-b340-7f53d94268b9",
           "927e464a-9c8e-4699-84ef-03b3fa1a00eb",
@@ -259,7 +259,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Chemical works: soap and detergent manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "28b2c37a-2b2b-4b7e-baea-80af664f4f6e",
           "6399e9b2-dae8-4574-b340-7f53d94268b9",
@@ -269,7 +269,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Dockyards and dockland",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -282,7 +282,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Dry cleaners",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -295,7 +295,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Engineering works: aircraft manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -310,7 +310,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Engineering works: electrical and electronic equipment",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -323,7 +323,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Engineering works: mechanical engineering and ordnance works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -338,7 +338,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Engineering works: railway engineering works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -350,7 +350,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Engineering works: shipbuilding repair and shipbreaking",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -364,7 +364,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Engineering works: vehicle manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -379,7 +379,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Fibreglass and fibreglass resin manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -394,7 +394,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Gasworks, coke works and other coal carbonisation plants",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -410,7 +410,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Glass manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -425,7 +425,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Metal manufacturing, refining and finishing works: electroplating/finishing",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -440,7 +440,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Metal manufacturing, refining and finishing works: iron- and steelworks",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -453,7 +453,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Metal manufacturing, refining and finishing works: lead works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -464,7 +464,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Metal manufacturing, refining and finishing works: non-ferrous (excl lead)",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -475,7 +475,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Metal manufacturing, refining and finishing works: precious metal recovery",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -488,7 +488,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Oil refineries and bulk storage of crude oil and petroleum products",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -501,7 +501,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Photographic processing industry",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -516,7 +516,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Power stations (excluding nuclear power stations)",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -530,7 +530,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Printing and bookbinding works",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -545,7 +545,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Pulp and paper manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -560,7 +560,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Railway land",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -573,7 +573,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Road vehicle servicing and repair: garages and filling stations",
-        contaminants: [
+        internalContaminants: [
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
@@ -587,7 +587,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Road vehicle servicing and repair: transport and haulage centres",
-        contaminants: [
+        internalContaminants: [
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
@@ -602,7 +602,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Sewage works and sewage farms",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
@@ -618,7 +618,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Textile works and dye works",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -633,7 +633,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Timber products manufacturing works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
           "28b2c37a-2b2b-4b7e-baea-80af664f4f6e",
@@ -647,7 +647,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Timber treatment works",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -662,7 +662,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Waste recycling, treatment and disposal sites: drum and tank cleaning/recycling",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "28b2c37a-2b2b-4b7e-baea-80af664f4f6e",
@@ -673,7 +673,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Waste recycling, treatment and disposal sites: hazardous waste treatment",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -686,7 +686,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Waste recycling, treatment and disposal sites: landfills and other waste treatment/disposal",
-        contaminants: [
+        internalContaminants: [
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
@@ -702,7 +702,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Waste recycling, treatment and disposal sites: solvent recovery works",
-        contaminants: [
+        internalContaminants: [
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "e6712f0b-eecd-40d7-abb7-c7b74e5a0361",
           "927e464a-9c8e-4699-84ef-03b3fa1a00eb",
@@ -712,7 +712,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Waste recycling, treatment and disposal sites: metal recycling",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "24926ec8-c2ae-4e77-b578-5f6815155aa5",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
@@ -725,7 +725,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Agricultural land",
-        contaminants: [
+        internalContaminants: [
           "628f41c5-5071-4f5b-8600-6f650da0c10b",
           "93d18fc5-4fba-46c6-8b4b-ad192cc9bd11",
           "131cd3b3-b09e-40cf-a5db-e5b2a822a180",
@@ -737,13 +737,13 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Electricity sub stations",
-        contaminants: ["9adc1954-f778-497d-b1ac-da074496980b"],
+        internalContaminants: ["9adc1954-f778-497d-b1ac-da074496980b"],
         internal: false,
         external: false,
       },
       {
         name: "Transformers",
-        contaminants: [
+        internalContaminants: [
           "6399e9b2-dae8-4574-b340-7f53d94268b9",
           "9adc1954-f778-497d-b1ac-da074496980b",
         ],
@@ -752,7 +752,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "MoD land",
-        contaminants: [
+        internalContaminants: [
           "9a892fa3-898d-46c2-9c12-48e0b05b4f81",
           "497efb42-7db6-40ba-b9ec-bfc89ac74787",
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
@@ -767,7 +767,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Interceptors in car parks",
-        contaminants: [
+        internalContaminants: [
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
           "6399e9b2-dae8-4574-b340-7f53d94268b9",
         ],
@@ -776,19 +776,19 @@ export const useContaminantStore = defineStore("comtaminants", () => {
       },
       {
         name: "Limestone/chalk bedrock",
-        contaminants: ["c6a97e0a-fd17-4e79-8bd3-1a5f8eb3336f"],
+        internalContaminants: ["c6a97e0a-fd17-4e79-8bd3-1a5f8eb3336f"],
         internal: false,
         external: false,
       },
       {
         name: "Made ground",
-        contaminants: ["c6a97e0a-fd17-4e79-8bd3-1a5f8eb3336f"],
+        internalContaminants: ["c6a97e0a-fd17-4e79-8bd3-1a5f8eb3336f"],
         internal: false,
         external: false,
       },
       {
         name: "Car wash",
-        contaminants: [
+        internalContaminants: [
           "030a6693-1356-4c9e-9b0e-51e5f8c21aa6",
           "6399e9b2-dae8-4574-b340-7f53d94268b9",
         ],
@@ -796,7 +796,7 @@ export const useContaminantStore = defineStore("comtaminants", () => {
         external: false,
       },
     ],
-    contaminants: [
+    internalContaminants: [
       {
         name: "Radioactivity",
         key: "31db7a56-0d29-4df0-b6c1-d4187777c6e7",

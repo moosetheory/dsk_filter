@@ -9,7 +9,8 @@ export interface ContaminantGroup {
 }
 export interface ContaminantSource {
   name: string;
-  contaminants: string[];
+  internalContaminants?: string[];
+  externalContaminants?: string[];
   internal: boolean;
   external: boolean;
 }
