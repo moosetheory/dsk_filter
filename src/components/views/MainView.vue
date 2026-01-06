@@ -24,12 +24,12 @@ const getAriaLabel = (start: string, contaminant: string): string => {
 const getUniqueContaminants = (): string[] =>
   contaminantStore
     .sources
-    .flatMap((src: ContaminantSource): string[] =>
-      src.internal ? src.internalContaminants : []
-    )
-    .flatMap((src: ContaminantSource): string[] =>
-      src.external ? src.externalContaminants : []
-    )
+    .flatMap((src: ContaminantSource): string[] => {
+      const internal = (src.internal && src.internalContaminants !== undefined) ? src.internalContaminants : []
+      const external = (src.external && src.externalContaminants !== undefined) ? src.externalContaminants : []
+      internal.push(...external)
+      return internal
+    })
     .filter((value: string, index: number, array: string[]): boolean =>
       array.indexOf(value) === index
     )
